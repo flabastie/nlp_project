@@ -1,0 +1,66 @@
+[
+  {
+    "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/Microsoft.SQLDatabase.newDatabaseNewServer_c640bfc054c94f59a8fb8/operations/2A68D6832F8D4B3F",
+    "operationId": "2A68D6832F8D4B3F",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-07-25T19:49:54.624386Z",
+      "duration": "PT50.8285053S",
+      "trackingId": "dd26c032-dc8a-4660-bcb0-728ba5d7d786",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/databases/francoisdb",
+        "resourceType": "Microsoft.Sql/servers/databases",
+        "resourceName": "francois-server/francoisdb"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/Microsoft.SQLDatabase.newDatabaseNewServer_c640bfc054c94f59a8fb8/operations/6E5D5597A8703BC8",
+    "operationId": "6E5D5597A8703BC8",
+    "properties": {
+      "provisioningOperation": "Read",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-07-25T19:49:03.9349728Z",
+      "duration": "PT0.1390921S",
+      "trackingId": "8503176c-bb8b-476e-a3f3-dd557351b12f",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+        "resourceType": "Microsoft.Sql/servers",
+        "resourceName": "francois-server",
+        "apiVersion": "2018-06-01-preview"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/Microsoft.SQLDatabase.newDatabaseNewServer_c640bfc054c94f59a8fb8/operations/DBFD00F5A3CBFC43",
+    "operationId": "DBFD00F5A3CBFC43",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-07-25T19:49:03.6216057Z",
+      "duration": "PT51.4627389S",
+      "trackingId": "61c57db6-2388-45c8-ba3b-5dcc66866d14",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+        "resourceType": "Microsoft.Sql/servers",
+        "resourceName": "francois-server"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/Microsoft.SQLDatabase.newDatabaseNewServer_c640bfc054c94f59a8fb8/operations/08586059003942802301",
+    "operationId": "08586059003942802301",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2020-07-25T19:49:54.9332642Z",
+      "duration": "PT0.1085025S",
+      "trackingId": "244be9c3-b608-4a6f-8bce-c6e65f326656",
+      "statusCode": "OK"
+    }
+  }
+]

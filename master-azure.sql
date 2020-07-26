@@ -1,0 +1,30 @@
+CREATE TABLE PROFIL (
+  id_profil INT NOT NULL PRIMARY KEY,
+  nom_profil VARCHAR(45) NOT NULL,
+)
+
+CREATE TABLE SMS (
+  id_sms INT NOT NULL PRIMARY KEY,
+  datetime DATETIME NULL,
+  message TEXT NOT NULL,
+  UTILISATEUR_id_utilisateur INT NOT NULL,
+  SUJET_id_sujet INT NULL,
+  ACTIVITE_id_activite INT NULL,
+)
+
+CREATE TABLE UTILISATEUR (
+  id_utilisateur INT NOT NULL PRIMARY KEY,
+  numtel INT NOT NULL,
+  PROFIL_id_profil INT NULL,
+)
+
+CREATE TABLE SUJET (
+  id_sujet INT NOT NULL PRIMARY KEY,
+  nom_sujet VARCHAR(45) NOT NULL,
+)
+
+CREATE TABLE ACTIVITE (
+  id_activite INT NOT NULL PRIMARY KEY,
+  time_start DATETIME NOT NULL,
+  time_end DATETIME NOT NULL,
+)

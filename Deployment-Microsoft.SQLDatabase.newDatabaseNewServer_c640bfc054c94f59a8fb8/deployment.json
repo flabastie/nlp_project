@@ -1,0 +1,358 @@
+{
+  "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/Microsoft.SQLDatabase.newDatabaseNewServer_c640bfc054c94f59a8fb8",
+  "name": "Microsoft.SQLDatabase.newDatabaseNewServer_c640bfc054c94f59a8fb8",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/databases/francoisdb",
+    "marketplaceItemId": "Microsoft.SQLDatabase"
+  },
+  "properties": {
+    "templateHash": "1485464395500262177",
+    "parameters": {
+      "administratorLogin": {
+        "type": "String",
+        "value": "flabastie"
+      },
+      "administratorLoginPassword": {
+        "type": "SecureString"
+      },
+      "collation": {
+        "type": "String",
+        "value": "SQL_Latin1_General_CP1_CI_AS"
+      },
+      "databaseName": {
+        "type": "String",
+        "value": "francoisdb"
+      },
+      "tier": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "skuName": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "location": {
+        "type": "String",
+        "value": "francecentral"
+      },
+      "maxSizeBytes": {
+        "type": "Int",
+        "value": 524288000
+      },
+      "serverName": {
+        "type": "String",
+        "value": "francois-server"
+      },
+      "sampleName": {
+        "type": "String",
+        "value": ""
+      },
+      "zoneRedundant": {
+        "type": "Bool",
+        "value": false
+      },
+      "licenseType": {
+        "type": "String",
+        "value": ""
+      },
+      "readScaleOut": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "numberOfReplicas": {
+        "type": "Int",
+        "value": 0
+      },
+      "minCapacity": {
+        "type": "String",
+        "value": ""
+      },
+      "autoPauseDelay": {
+        "type": "String",
+        "value": ""
+      },
+      "enableADS": {
+        "type": "Bool",
+        "value": false
+      },
+      "allowAzureIps": {
+        "type": "Bool",
+        "value": false
+      },
+      "databaseTags": {
+        "type": "Object",
+        "value": {}
+      },
+      "serverTags": {
+        "type": "Object",
+        "value": {}
+      },
+      "enableVA": {
+        "type": "Bool",
+        "value": false
+      },
+      "useVAManagedIdentity": {
+        "type": "Bool",
+        "value": false
+      },
+      "enablePrivateEndpoint": {
+        "type": "Bool",
+        "value": false
+      },
+      "privateEndpointNestedTemplateId": {
+        "type": "String",
+        "value": "pe-d48d9725-ae9d-4ee7-aa56-a3d4c6f67015"
+      },
+      "privateEndpointSubscriptionId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointResourceGroup": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointName": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointLocation": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointSubnetId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateLinkServiceName": {
+        "type": "String",
+        "value": ""
+      },
+      "privateLinkServiceServiceId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointVnetSubscriptionId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointVnetResourceGroup": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointVnetName": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointSubnetName": {
+        "type": "String",
+        "value": ""
+      },
+      "enablePrivateDnsZone": {
+        "type": "Bool",
+        "value": true
+      },
+      "privateLinkPrivateDnsZoneFQDN": {
+        "type": "String",
+        "value": "privatelink.database.windows.net"
+      },
+      "privateEndpointDnsRecordUniqueId": {
+        "type": "String",
+        "value": "d48d9725-ae9d-4ee7-aa56-a3d4c6f67018"
+      },
+      "privateEndpointTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0129748/DeploymentTemplates/PrivateEndpoint.json"
+      },
+      "privateDnsForPrivateEndpointTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0129748/DeploymentTemplates/PrivateDnsForPrivateEndpoint.json"
+      },
+      "privateDnsForPrivateEndpointNicTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0129748/DeploymentTemplates/PrivateDnsForPrivateEndpointNic.json"
+      },
+      "privateDnsForPrivateEndpointIpConfigTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.0129748/DeploymentTemplates/PrivateDnsForPrivateEndpointIpConfig.json"
+      },
+      "allowClientIp": {
+        "type": "Bool",
+        "value": false
+      },
+      "clientIpRuleName": {
+        "type": "String",
+        "value": "ClientIp-2020-7-25_21-48-9"
+      },
+      "clientIpValue": {
+        "type": "String",
+        "value": "77.205.15.229"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2020-07-25T19:49:54.9579022Z",
+    "duration": "PT1M43.7604438S",
+    "correlationId": "8c220deb-62c1-4aa6-bfd7-5300f27f77da",
+    "providers": [
+      {
+        "namespace": "Microsoft.Sql",
+        "resourceTypes": [
+          {
+            "resourceType": "servers",
+            "locations": [
+              "francecentral"
+            ]
+          },
+          {
+            "resourceType": "servers/databases",
+            "locations": [
+              "francecentral"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "francois-server"
+          },
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Storage/storageAccounts/sqlvadnzuwivamnzv4",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "sqlvadnzuwivamnzv4"
+          },
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "francois-server",
+            "apiVersion": "2018-06-01-preview"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Storage/storageAccounts/sqlvadnzuwivamnzv4/providers/Microsoft.Authorization/roleAssignments/8c071fa4-bfba-59d5-b436-1ee5bea0843a",
+        "resourceType": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
+        "resourceName": "sqlvadnzuwivamnzv4/Microsoft.Authorization/8c071fa4-bfba-59d5-b436-1ee5bea0843a"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "francois-server"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/databases/francoisdb",
+        "resourceType": "Microsoft.Sql/servers/databases",
+        "resourceName": "francois-server/francoisdb"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "francois-server"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/firewallrules/AllowAllWindowsAzureIps",
+        "resourceType": "Microsoft.Sql/servers/firewallrules",
+        "resourceName": "francois-server/AllowAllWindowsAzureIps"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "francois-server"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/firewallrules/ClientIp-2020-7-25_21-48-9",
+        "resourceType": "Microsoft.Sql/servers/firewallrules",
+        "resourceName": "francois-server/ClientIp-2020-7-25_21-48-9"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "francois-server"
+          },
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/databases/francoisdb",
+            "resourceType": "Microsoft.Sql/servers/databases",
+            "resourceName": "francois-server/francoisdb"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/securityAlertPolicies/Default",
+        "resourceType": "Microsoft.Sql/servers/securityAlertPolicies",
+        "resourceName": "francois-server/Default"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "francois-server"
+          },
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Storage/storageAccounts/sqlvadnzuwivamnzv4",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "sqlvadnzuwivamnzv4"
+          },
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/securityAlertPolicies/Default",
+            "resourceType": "Microsoft.Sql/servers/securityAlertPolicies",
+            "resourceName": "francois-server/Default"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/vulnerabilityAssessments/Default",
+        "resourceType": "Microsoft.Sql/servers/vulnerabilityAssessments",
+        "resourceName": "francois-server/Default"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/databases/francoisdb",
+            "resourceType": "Microsoft.Sql/servers/databases",
+            "resourceName": "francois-server/francoisdb"
+          },
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/SubnetPolicies-",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "SubnetPolicies-"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/PrivateEndpoint-",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "PrivateEndpoint-"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/PrivateEndpoint-",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "PrivateEndpoint-"
+          }
+        ],
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Resources/deployments/PrivateDns-pe-d48d9725-ae9d-4ee7-aa56-a3d4c6f67015",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "PrivateDns-pe-d48d9725-ae9d-4ee7-aa56-a3d4c6f67015"
+      }
+    ],
+    "outputResources": [
+      {
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server"
+      },
+      {
+        "id": "/subscriptions/bd956486-8fea-467b-be3e-5047d7dda3f5/resourceGroups/francois_resgroup/providers/Microsoft.Sql/servers/francois-server/databases/francoisdb"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
