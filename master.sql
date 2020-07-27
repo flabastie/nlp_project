@@ -29,7 +29,6 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `master_p`.`UTILISATEUR` (
   `id_utilisateur` INT NOT NULL,
-  `numtel` INT NOT NULL,
   `PROFIL_id_profil` INT NULL,
   PRIMARY KEY (`id_utilisateur`))
 ENGINE = InnoDB;
@@ -52,6 +51,7 @@ CREATE TABLE IF NOT EXISTS `master_p`.`ACTIVITE` (
   `id_activite` INT NOT NULL AUTO_INCREMENT,
   `time_start` DATETIME NOT NULL,
   `time_end` DATETIME NOT NULL,
+  `SUJET_id_sujet` INT NULL,
   PRIMARY KEY (`id_activite`))
 ENGINE = InnoDB;
 
@@ -61,8 +61,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `master_p`.`SMS` (
   `id_sms` INT NOT NULL,
-  `datetime` DATETIME NULL,
-  `message` BLOB NOT NULL,
+  `date_time` DATETIME NOT NULL,
+  `content` BLOB NOT NULL,
+  `time_stamp` INT NOT NULL,
   `UTILISATEUR_id_utilisateur` INT NOT NULL,
   `SUJET_id_sujet` INT NULL,
   `ACTIVITE_id_activite` INT NULL,
@@ -70,7 +71,16 @@ CREATE TABLE IF NOT EXISTS `master_p`.`SMS` (
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `master_p`.`UTILISATEUR_has_SUJET`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `master_p`.`UTILISATEUR_has_SUJET` (
+  `UTILISATEUR_id_utilisateur` INT NOT NULL,
+  `SUJET_id_sujet` INT NOT NULL,
+  PRIMARY KEY (`UTILISATEUR_id_utilisateur`, `SUJET_id_sujet`))
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
-SET FOREIGN_KEY_CHECKS=0;
